@@ -1,0 +1,266 @@
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    line-height: 1.6;
+}
+
+/* 登录页面样式 */
+.admin-login {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-login h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+#login-message {
+    margin-top: 1rem;
+    color: #e74c3c;
+    text-align: center;
+}
+
+/* 后台主页样式 */
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-nav {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 2rem;
+}
+
+.admin-nav h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.admin-nav ul {
+    list-style: none;
+}
+
+.admin-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 0;
+    display: block;
+    transition: 0.3s;
+}
+
+.admin-nav a:hover {
+    padding-left: 0.5rem;
+    background: rgba(255,255,255,0.1);
+}
+
+.admin-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+/* 表格样式 */
+.table-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.action-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 0.25rem;
+    color: white;
+}
+
+.edit-btn { background: #3498db; }
+.delete-btn { background: #e74c3c; }
+.ban-btn { background: #e74c3c; }
+
+/* 充值码管理样式 */
+#recharge-codes-page .form-group {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+#recharge-codes-page .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+#recharge-codes-page .form-group input {
+    width: 120px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#generate-codes-btn {
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #2ecc71 0%, #1abc9c 100%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#generate-codes-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(46,204,113,0.2);
+}
+
+#recharge-codes-table td {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 标签页样式 */
+.tab-nav {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #eee;
+}
+
+.tab-btn {
+    padding: 0.75rem 1.5rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    color: #0061ff;
+}
+
+.tab-btn.active {
+    color: #0061ff;
+    border-bottom-color: #0061ff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* 表格搜索和过滤 */
+.table-filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.table-filters input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.table-filters select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* 分页样式 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.pagination button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    background: white;
+    color: #333;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background: #0061ff;
+    color: white;
+    border-color: #0061ff;
+} 
